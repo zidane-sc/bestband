@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_about_me"
+        android:icon="@drawable/profile"
+        android:title="@string/about_me"
+        app:showAsAction="ifRoom"
+        android:onClick="aboutMeActivity"/>
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_gravity="end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:button="@null"
+        android:textColor="@color/white" />
+</menu>

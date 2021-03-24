@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutMeActivity"
+    android:background="@color/colorBackground"
+    android:paddingBottom="50dp">
+
+    <TextView
+        android:id="@+id/text_about"
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:text="@string/about_me"
+        android:textSize= "30sp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/fotoprofie"
+        android:layout_below="@+id/text_about" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/desc_about"
+        android:text="M. Zidane Sc"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/title"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/email"
+        android:textColor="@color/font"
+        android:text="zidankren02@gmail.com"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="60dp"/>
+
+</RelativeLayout>
